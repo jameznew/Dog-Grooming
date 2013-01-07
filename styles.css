@@ -1,0 +1,722 @@
+/* ----------------------------------
+-------------------------------------
+-------------------------------------
+------- CSS STYLE SHEET CONTENTS-----
+-------------------------------------
+-------------------------------------
+----------------------------------- */
+
+
+/*-----------------------------------
+  1) Reset Styles
+  2) Master Rules
+  3) Structural Rules
+  4) Content Stylings - Template
+  5) Content Stylings - Navigation
+  6) Content Stylings - Home
+  7) Content Stylings - About Me
+  8) Content Stylings - Services
+  8) Content Stylings - Testimonials
+  10) Content Stylings - Contact Me
+  
+  -----------------------------------
+  -----------------------------------
+  
+  If you like what you see here then 
+  please get in touch with me , my 
+  details are as follows:
+  
+  www.jn-design.co.uk
+  LinkedIN:http://www.linkedin.com/in/jamespnew 
+  Email: james@jn-design.co.uk
+
+ ------------------------------------
+ -------- JN Design - 2013 ----------
+  ---Website Design & Development----
+ ----------------------------------*/
+
+/* 1)Reset Styles *\
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+@font-face {
+    font-family: 'groboldregular';
+    src: url('grobold-webfont.eot');
+    src: url('grobold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('grobold-webfont.woff') format('woff'),
+         url('grobold-webfont.ttf') format('truetype'),
+         url('grobold-webfont.svg#groboldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ----------------------------------
+-----2)Master Rules  ----------------
+-----------------------------------*/
+html,body{height:100%;font-size: 1.5em;background-image:url('images/white_paperboard.png'); 
+    background-repeat:repeat;}
+    body img{max-width: 100%;}
+body a:link{text-decoration: none;color:black;}
+body a:visited{text-decoration: none;color:black;}
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+
+line-height: 0;
+height: 0;
+
+}
+
+.clearfix {
+display: block;
+}
+
+ html[xmlns] .clearfix {
+display: block;
+}
+
+* html .clearfix {
+height: 1%;
+}
+
+
+h3{text-shadow: black 2px 2px 2px;
+  font-size: 1.1em;
+  font-family: 'groboldregular';
+  padding-bottom: 2%;
+  -webkit-text-stroke: 1.0px #0d389e;
+-webkit-text-fill-color: #FFFFFF}
+/* ----------------------------------
+-----3)Structural Rules ------------
+-----------------------------------*/
+
+#wrapper{
+  min-height:100%;
+  height: auto !important;
+  height:100%;
+  margin:  0 auto -5em;
+}
+
+#header{
+  width:100%;
+  height:150px;
+  
+
+
+background: rgb(178,225,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(178,225,255,1) 0%, rgba(102,182,252,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(178,225,255,1)), color-stop(100%,rgba(102,182,252,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(178,225,255,1) 0%,rgba(102,182,252,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2e1ff', endColorstr='#66b6fc',GradientType=0 ); /* IE6-9 */
+
+  margin-bottom: 80px;
+  border-bottom:4px solid #0d389e;
+}
+
+#header_container{
+  max-width: 960px;
+  margin: 0 auto;
+  height: auto;
+
+
+}
+
+#content{
+  width:90%;
+  margin: 0 auto;
+  /*height:1000px;  Development Purposes -- */
+  background: rgb(102, 182, 252) transparent; /* default fallback */
+background: rgba(102, 182, 252, 0.1); /* nice browsers */
+  max-width: 960px;
+  margin-bottom: 5%;
+  padding: 2%;
+  text-align: left;
+  font-size: 0.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-box-shadow: 0px 3px 28px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 28px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 3px 28px rgba(50, 50, 50, 0.75);
+border:2px solid #0d389e;
+
+  
+
+  
+
+
+
+}
+
+#footer{
+
+background: -moz-linear-gradient(top,  rgba(102,182,252,0.6) 0%, rgba(178,225,255,0.6) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,182,252,0.6)), color-stop(100%,rgba(178,225,255,0.6))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(102,182,252,0.6) 0%,rgba(178,225,255,0.6) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(102,182,252,0.6) 0%,rgba(178,225,255,0.6) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(102,182,252,0.6) 0%,rgba(178,225,255,0.6) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(102,182,252,0.6) 0%,rgba(178,225,255,0.6) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9966b6fc', endColorstr='#99b2e1ff',GradientType=0 ); /* IE6-9 */
+
+color:black;width:100%;  border-top: 4px solid #0d389e;}
+#footer p.address{font-size:0.7em;width:40%;float: left;text-shadow:none;}
+#footer p.map{width:50%;float: right;height:150px;border:2px solid #0d389e;}
+#footer a{color:white;text-decoration: none;}
+#footer_container{
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'groboldregular';
+  font-size: 0.7em;
+  width:100%;
+  padding-left: 5%;
+
+}
+
+#footer,#push{
+  height:8em;
+ clear:both;
+}
+
+
+
+
+#twitter{
+  font-size: 0.6em;
+  color:black;
+  background-image:url('images/tw.png'); 
+    background-position: top-left;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    text-shadow:none;
+}
+
+#twitter ul{list-style-type: none;padding-top: 30px;padding-left: 50px;}
+#twitter a:link{color:black;}
+#twitter a:hover{color:white;}
+#twitter a:visited{color:black;}
+#twitter a:visited:hover{color:white;}
+
+#fb{
+  background-image:url('images/fb.png'); 
+    background-position: top-left;
+    background-repeat: no-repeat;
+}
+
+/* ----------------------------------
+-----4)Content Stylings Template ----
+-----------------------------------*/
+
+#left_logo{
+  
+  float: left;
+  width:52.5%;
+ 
+}
+
+#left_logo img{max-width: 100%;}
+
+
+
+
+#right_nav{
+
+ 
+  float:right;
+  width:45%;
+  height:auto;
+  font-family: 'groboldregular';
+  
+}
+
+#contact{
+  width:100%;
+  text-align: right;
+  font-size: 0.5em;
+
+}
+
+#contact a:hover{text-decoration: underline;}
+
+#navbar{
+  width:100%;
+  margin-top: 14%;
+  text-align: right;
+
+
+
+}
+
+#navbar li{
+  list-style-type: none;
+  display: inline;
+  font-size: 0.6em;
+
+
+}
+
+.nav:link{text-decoration: none;color:black;}
+.nav:hover{text-decoration:none;color:white;text-shadow: black 2px 2px 2px; }
+.nav:visited{color:black;}
+.nav:visited:hover{color:white;}
+.nav:active{}
+
+#map{
+
+  width:48%;
+  text-shadow:white 2px 2px 2px;
+  float:left;
+
+}
+
+
+
+#social{
+  width:48%;
+ text-shadow: white 2px 2px 2px;
+  float:right;
+  
+
+}
+#social img{max-width: 100%;text-align: center;}
+#social p.icons{text-align: center;}
+
+
+#copyright{
+  margin: 0 auto;
+  width:100%;
+  margin-top: 5%;
+  font-size: 0.7em;
+  display: inline-block;
+  text-align: center;
+  text-shadow: white 2px 2px 2px;
+}
+#copyright a:link{color:black;}
+#copyright a:hover{color:white;text-shadow:none;}
+#copyright a:visited{color:black;}
+
+
+
+/* ----------------------------------
+-----6)Content Stylings Home --------
+-----------------------------------*/
+
+#showcase{
+  
+  width:95%;
+  height:350px;
+  margin:0 auto;
+  margin-bottom: 4%;
+  font-size: 1em;
+
+}
+.heading{
+  width:100%;
+  text-align: center;
+ text-shadow: black 2px 2px 2px;
+  font-size: 2.1em;
+  font-family: 'groboldregular';
+  padding-bottom: 2%;
+  -webkit-text-stroke: 1.5px #0d389e;
+-webkit-text-fill-color: #FFFFFF
+
+}
+
+.debbie{
+  float:left;
+  width:25%;
+
+
+}
+
+.debbie img{border:4px solid #0d389e;max-width: 100%}
+
+.showcase{
+  float:right;
+  width:60%;
+  margin-right: 10%;
+}
+
+
+#column_left{
+
+  width:31.33%;
+  float:left;
+  height:auto;
+  
+
+}
+
+
+#column_middle{
+  width:31.33%;
+  float:left;
+  height:auto;
+  margin-left: 2.5%;
+
+
+}
+#column_middle li {list-style-image: url('images/bulletpaw.png');margin-left: 7%;}
+
+
+#column_right{
+
+   width:31.33%;
+  float:right;
+  height:auto;
+
+
+}
+
+#column_right img {max-width: 100%;}
+#column_left img {max-width: 100%;}
+#column_middle img {max-width: 100%;}
+
+#column_right p img {border:4px solid #0d389e;max-width: 100%;margin-bottom: 1%;margin-left: 5%;}
+#column_left p img {border:4px solid #0d389e;max-width: 100%;margin-bottom: 1%;margin-left: 5%;}
+#column_middle p img {border:4px solid #0d389e;max-width: 100%;margin-bottom: 1%;margin-left: 5%;}
+
+.readmore{
+  background-image: url("images/buttonsprite.png");
+  background-position: 0px 0px;
+  text-indent: -99999px;
+  display: block;
+  width:215px;
+  margin-left: 7%;
+  margin-top: 5%;
+  height:50px;
+}
+
+.readmore:hover{
+  background-position: 0px -60px;
+}
+
+.readmoreshowcase{
+  background-image: url("images/buttonsprite.png");
+  background-position: 0px 0px;
+  text-indent: -99999px;
+  display: block;
+  width:215px;
+  margin: 0 auto;
+  height:50px;
+}
+
+.readmoreshowcase:hover{
+  background-position: 0px -60px;
+}
+
+
+
+
+/*----------------------------------
+-----6)Content Stylings About --------
+-----------------------------------*/
+
+#heading{
+
+
+   width:100%;
+  text-align: left;
+ text-shadow: black 2px 2px 2px;
+  font-size: 2.1em;
+  font-family: 'groboldregular';
+  padding-bottom: 2%;
+  -webkit-text-stroke: 1.5px #0d389e;
+-webkit-text-fill-color: #FFFFFF
+
+}
+
+#leftabout{
+  
+  width:60%;
+  float: left;
+  font-size: 0.85em;
+
+}
+
+#leftabout img{border:3px solid #0d389e;margin-right: 2%;}
+
+#rightabout{
+
+  
+  width:37%;
+  float:right;
+  height:auto;
+  margin-top: -5%;
+
+}
+
+#rightabout ul{
+  list-style-image: url('images/bulletpaw.png');
+  font-size: 0.7em;
+  margin-left: 20%;
+
+
+  
+}
+
+#rightabout ul li{float:left;margin-right: 13%;}
+
+
+.debbiebio{
+  text-align: center;
+
+}
+
+.openinghours{
+  margin-top: 15%;
+  width:100%;
+  float: left;
+}
+
+.accred{
+  width:100%;
+  float:left;
+}
+
+.cert{margin-top:-14%;}
+
+#signature{
+  width:50%;
+  height:100px;
+  text-align: center;
+  background-image: url("images/signature.png");
+  background-repeat: no-repeat;
+  float: left;
+  padding-top: 4%;
+   text-shadow: black 2px 2px 2px;
+  font-size: 1.3em;
+  font-family: 'groboldregular';
+  padding-bottom: 2%;
+  -webkit-text-stroke: 1.5px #0d389e;
+-webkit-text-fill-color: #FFFFFF;
+
+
+}
+
+
+
+
+/*----------------------------------
+-----6)Content Stylings Services ---
+-----------------------------------*/
+
+
+#serviceswrapper{
+  margin: 0 auto;
+  margin-left: 4%;
+  margin-top: 5%;
+
+}
+
+#serviceswrapper img{
+  padding-right: 2%;
+
+  padding-bottom: 5%;
+}
+
+.thumb {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    margin: 5px;
+    float: left;
+    border:3px solid #0d389e;
+}
+.text {
+    display: none;
+    position: absolute;
+    left: 00px;
+    bottom: 0;
+    width: 100%;
+    background: #C9E2F0;
+    background:rgba(201, 226, 240, 1);
+    height:80px;
+    text-align: center;
+    font-size:0.7em;
+}
+.thumb:hover .text {
+    display: block;
+}
+
+.thumb:hover img
+{
+filter: alpha(Opacity=20);
+opacity: 0.4;}
+
+
+​
+
+.readmore2{
+  background-image: url("images/buttonsprite.png");
+  background-position: 0px 0px;
+  text-indent: -99999px;
+  display: block;
+  width:215px;
+  margin-left: 7%;
+  margin-top: 5%;
+  height:50px;
+}
+
+.readmore2:hover{
+  background-position: 0px -60px;
+}
+
+
+.quote{
+  float: left;
+  width:100%;
+  text-align: center;
+  font-size: 1.3em;
+  margin-top: 5%;
+}
+
+.quote a:link{
+  font-size: 1em;
+  font-family: 'groboldregular';
+  -webkit-text-stroke: 1.5px #0d389e;
+-webkit-text-fill-color: #FFFFFF;}
+.quote a:hover{text-shadow: black 2px 2px 2px;}
+.quote a:visited{font-size: 1em;
+  font-family: 'groboldregular';
+  -webkit-text-stroke: 1.5px #0d389e;
+-webkit-text-fill-color: #FFFFFF;}
+
+
+
+
+/*----------------------------------
+-----6)Content Stylings Gallery ---
+-----------------------------------*/
+
+
+
+
+
+
+
+
+/*----------------------------------
+-----6)Content Stylings Contact ---
+-----------------------------------*/
+
+#contactleft{
+  width:60%;
+  float: left;
+  
+}
+#contactright{
+  width:37%;
+  height:300px;
+  float:right;
+}
+
+#contact_form{
+
+width:350px;
+height:600px;
+  
+}
+
+
+
+#form{
+ float:left;
+ width:100%;
+ height:650px;
+ overflow: hidden;
+}
+label{
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+    margin-left: 20px;
+     
+}
+
+input, textarea {
+  width:100%;
+  height:27px;
+  background:white;
+    margin-left: 20px;  
+  padding:10px;
+  margin-top:3px;
+  font-size:0.9em;
+  color:grey;
+  border:2px solid #0d389e;
+}
+
+textarea{
+  height:150px;
+      margin-left: 20px;
+}
+
+input:focus, textarea:focus {
+    border:3px solid #0d389e;
+    
+}
+
+
+#submit {
+    width:127px;
+    height:55px;
+    color:black;
+    border:none;
+    margin-top:10px;
+    cursor:pointer;
+    border:3px solid #0d389e;
+margin-left: 120px;
+font-size: 20px;
+opacity: 0.4;
+}
+
+#submit:hover {
+      opacity:0.9;
+  }
+
+
+.largemap{
+  border:2px solid #0d389e;
+  font-size: 0.2em;
+}
+.largemaptext{font-size: 0.8em;width:100%;text-align: right;}
+
+h4{
+  text-shadow: black 2px 2px 2px;
+  font-size: 1.1em;
+  font-family: 'groboldregular';
+  padding-bottom: 2%;
+  -webkit-text-stroke: 1.0px #0d389e;
+-webkit-text-fill-color: #FFFFFF
+}
+
+.getintouch{
+  margin-top: 5%;
+}
